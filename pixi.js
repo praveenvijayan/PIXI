@@ -20,7 +20,7 @@
             evt.stopPropagation();
             evt.preventDefault();
             var orginalEvt = evt.originalEvent.dataTransfer;
-            orginalEvt.dropEffect = 'copy'; // Explicitly show this is a copy.	
+            orginalEvt.dropEffect = 'copy'; // Explicitly show this is a copy.  
             dropZone.addClass('pixiOver');
         });
 
