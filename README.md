@@ -3,18 +3,18 @@ PIXI
 
 PIXI helps to make your site pixel perfect. PIXI let you overlay design mockup over your site. You can adjust opacity and position of the overlay.
 ## Demo
-<a href="http://praveenvijayan.github.com/PIXI/code/">Demo</a>
-<a href="http://praveenvijayan.github.com/PIXI/code/">Page</a>
+<a href="http://praveenvijayan.github.com/PIXI/code/">Demo</a><br>
+<a href="http://praveenvijayan.github.com/PIXI/code/">Github Page</a>
 
 ## Install
 
 * include pixi.js & pixi.css in your site.
 
 ```
-<link rel="stylesheet" href="http://praveenvijayan.github.com/PIXI/code/pixi.css">
+<link rel="stylesheet" href="http://praveenvijayan.github.com/PIXI/code/pixi.min.css">
 
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-<script src="http://praveenvijayan.github.com/PIXI/code/pixi.js"></script>
+<script src="http://praveenvijayan.github.com/PIXI/code/pixi.min.js"></script>
 
 ```
 
@@ -42,6 +42,6 @@ PIXI helps to make your site pixel perfect. PIXI let you overlay design mockup o
 PIXI uses HTML DnD, File API & Local storage to do things. It won't work in IE. Tested in chrome & Firefox. 
 
 ## Resource
-
+<a href="http://www.decodize.com/css/pixi-tool-create-pixel-perfect-site/">Decodize.com</a>
 
 
