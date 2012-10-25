@@ -13,9 +13,10 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+#pixiOverlay.pointerDisable{
 	pointer-events:none;
 }
-
 #pixiOverlay.pixiOver{
 	background:rgba(255,0,0,.8); 
 }

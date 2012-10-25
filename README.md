@@ -2,16 +2,19 @@ PIXI
 ====
 
 PIXI helps to make your site pixel perfect. PIXI let you overlay design mockup over your site. You can adjust opacity and position of the overlay.
+## Demo
+<a href="http://praveenvijayan.github.com/PIXI/code/">Demo</a>
+<a href="http://praveenvijayan.github.com/PIXI/code/">Page</a>
 
 ## Install
 
 * include pixi.js & pixi.css in your site.
 
 ```
-<link rel="stylesheet" href="pixi.css">
+<link rel="stylesheet" href="http://praveenvijayan.github.com/PIXI/code/pixi.css">
 
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-<script src="pixi.js"></script>
+<script src="http://praveenvijayan.github.com/PIXI/code/pixi.js"></script>
 
 ```
 
@@ -32,11 +35,13 @@ PIXI helps to make your site pixel perfect. PIXI let you overlay design mockup o
 * <kbd> &darr; </kbd>  			Moves overlay image 1px down.
 * <kbd> shift </kbd> + <kbd>Drag</kbd> 	Moves overlay image.
 * <kbd> 0 </kbd> - <kbd>9</kbd> 	Sets overlay opacity.
+* <kbd> P </kbd>  Disables overlays pointer event. When pointer event is none. You can't drag n drop images. Activate when you want to inspect underlaing elements.
 
 ## Browser support
 
 PIXI uses HTML DnD, File API & Local storage to do things. It won't work in IE. Tested in chrome & Firefox. 
 
 ## Resource
+
 
 

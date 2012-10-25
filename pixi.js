@@ -20,7 +20,7 @@
             evt.stopPropagation();
             evt.preventDefault();
             var orginalEvt = evt.originalEvent.dataTransfer;
-            orginalEvt.dropEffect = 'copy'; // Explicitly show this is a copy.	
+            orginalEvt.dropEffect = 'copy'; // Explicitly show this is a copy.  
             dropZone.addClass('pixiOver');
         });
 
@@ -104,8 +104,11 @@
                     grid: 71,
                     zindex: 90,
                     shift: 16,
+                    see:80,
                     opacity: [48, 49, 50, 51, 52, 53, 54, 55, 56, 57]
                 };
+
+                console.log(keyCode)
 
             switch (keyCode) {
                 case arrow.left:
@@ -132,6 +135,9 @@
                     break;
                 case arrow.shift:
                     shiftDown = true;
+                    break;
+                case arrow.see:
+                    $('#pixiOverlay').toggleClass('pointerDisable');
                     break;
                 default:
                     if (keyCode >= 48 && keyCode <= 57) {
