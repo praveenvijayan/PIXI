@@ -6,9 +6,142 @@
 	<link rel="stylesheet" href="pixi.css">
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 	<script src="pixi.js"></script>
+	<style>
+		html, body{
+			margin: 0;
+			padding: 0;
+			font: 13px Arial,sans-serif;
+		}
+		.shortcuts{
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #f1f1f1;
+			border: 1px solid #ccc;
+			width: 20%;
+			padding: 10px;
+		}
+		kbd{
+			padding: 0.1em 0.6em;
+			border: 1px solid #CCC;
+			font-size: 11px;
+			font-family: Arial,Helvetica,sans-serif;
+			background-color: #F7F7F7;
+			color: #333;
+			-moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+			-webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px white inset;
+			box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px white inset;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			display: inline-block;
+			margin: 0 0.1em;
+			margin-right: 10px;
+			text-shadow: 0 1px 0 white;
+			line-height: 1.4;
+			white-space: nowrap;
+			float: left;
+		}
+		p{
+			margin: 0 0 10px;
+		}
+		h3{
+			margin: 0 0 10px 0;
+			padding: 0;
+			font-size: 16px;
+			color: brown;
+		}
+		#banner {
+			height: 149px;
+			width: 149px;
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
 
+		#banner a {
+			display: block;
+			width: 190px;
+			font-size: 14px;
+			font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans serif;
+			background-color: #333;
+			color: white;
+			word-spacing: 2px;
+			text-decoration: none;
+			padding: 5px 15px 5px 25px;
+			position: relative;
+			left: 20px;
+			top: -37px;
+			text-align: center;
+			-moz-transform-origin: 0 0;
+			-moz-transform: rotate(45deg);
+			-moz-box-shadow: 1px 1px 5px 1px #666;
+			-webkit-transform-origin: 0 0;
+			-webkit-transform: rotate(45deg);
+			-webkit-box-shadow: 1px 1px 5px 1px #666;
+			-ms-transform-origin: 0 0;
+			-ms-transform: rotate(45deg);
+			-ms-box-shadow: 1px 1px 5px 1px #666;
+			transform-origin: 0 0;
+			transform: rotate(45deg);
+			box-shadow: 1px 1px 5px 1px #666;
+			background-image: linear-gradient(bottom, black 3%, #666 5%, black 7%, black 93%, #666 95%, black 97%);
+			background-image: -o-linear-gradient(bottom, black 3%, #666 5%, black 7%, black 93%, #666 95%, black 97%);
+			background-image: -moz-linear-gradient(bottom, black 3%, #666 5%, black 7%, black 93%, #666 95%, black 97%);
+			background-image: -webkit-linear-gradient(bottom, black 3%, #666 5%, black 7%, black 93%, #666 95%, black 97%);
+			background-image: -ms-linear-gradient(bottom, black 3%, #666 5%, black 7%, black 93%, #666 95%, black 97%);
+			background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.03, black), color-stop(0.05, #666), color-stop(0.07, black), color-stop(0.93, black), color-stop(0.95, #666), color-stop(0.97, black) );
+			}
+
+		br{
+			display: block;
+			clear: both;
+		}
+
+		a{
+			text-decoration: none;
+			color: darkblue;
+		}
+		a:hover{
+			color: #333;
+		}
+		.fleft{
+			float: left;
+		}
+		span.fleft{
+			margin-right: 10px;
+		}
+
+	</style>
 </head>
 <body style="background:url(http://pcdn.500px.net/16656321/1326e456af9aa619a554e7ca253ecaf34c4b703f/4.jpg?t=1351142103) no-repeat center 0">
+<div class="shortcuts">
+<h3>Usage</h3>
+<p>Press <kbd>G</kbd> to activate the overlay. Drag-n-Drop image. Adjust opacity & position. </p>
+<br>
+<h3>Shortcuts</h3>
+<p>
+	<kbd>G</kbd> Toggle overlay. <br>
+	<kbd>shift</kbd>  <span class="fleft">+</span> <kbd>Drag</kbd> Moves overlay image.<br>
+	<kbd>Z</kbd> Bring fornt or sent to back [z-index:0-9999].<br>
+	<kbd> &larr; </kbd> Moves overlay image 1px left.<br>
+	<kbd> &rarr; </kbd> Moves overlay image 1px right.<br>
+	<kbd> &uarr; </kbd> Moves overlay image 1px up.<br>
+	<kbd> &darr; </kbd> Moves overlay image 1px down.<br>
+	<kbd>0  – 9</kbd> Sets overlay opacity.<br>
+	<kbd>P</kbd> Disables overlays pointer event. When pointer event is none. You can't drag n drop images. Activate when you want to inspect underlaing elements.<br>
+</p>
+<br>
+<h3>Resource</h3>
+<p>
+	<a href="http://www.decodize.com/css/pixi-tool-create-pixel-perfect-site/">Decodize.com</a><br>
+	<a href="https://praveenvijayan.github.com/PIXI">GitHub</a>
+</p>
+</div>
+<div id="banner"><a href="https://github.com/praveenvijayan/PIXI">Fork me on GitHub</a></div>
 
 </body>
 </html>
